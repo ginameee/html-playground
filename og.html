@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="오쥐 테스트 타이틀" />
+    <meta property="og:description" content="오쥐 테스트 디스크립션!" />
+    <meta
+      property="og:image"
+      content="https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=11288734&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNS8wMi9DTFM2OS9OVVJJXzAwMV8wMjIwX251cmltZWRpYV8yMDE1MTIwMw==&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10006"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="og-img-change-btn">og image 변경</button>
+  </body>
+  <script>
+    const ogImgChangeBtn = document.querySelector("#og-img-change-btn");
+
+    ogImgChangeBtn.onclick = () => {
+      const ogImageMeta = document.querySelector('meta[property="og:image"]');
+      ogImageMeta.content =
+        "https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=9103065&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNC8yNC9DTFM2L2RpZ2lfOTEwMzA2NV8wMTIwMTQxMDIz&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10006";
+    };
+  </script>
+</html>
